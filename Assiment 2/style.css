@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.img{
+    background: url("image/clouds.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.img:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.7);
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 999;
+    width:370px;
+    text-align: center;
+    padding: 60px 32px;
+    background: rgba(255,255,255,0.04);
+    box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.7);
+}
+.content header{
+color: rgb(157, 183, 183);
+font-size: 30px;
+font-weight: 600;
+margin:0 0 35px 0;
+font-family:cursive;
+}
+.field{
+    position: relative;
+    height: 45px;
+    width:100%;
+    display: flex;
+    background: rgba(255,255,255,0.94);
+}
+.field input{
+    height: 100%;
+    width:100%;
+    background: transparent;
+    border: none;
+    outline:none;
+    color:#222;
+    font-size: 16px;
+}
+.show{
+    position: absolute;
+    right: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color:#222;
+    cursor:pointer;
+    display: none;
+    font-family: 'Lucida Sans' sans-serif;
+}
+.password:valid ~ .show{
+    display:block;
+}
+.space{
+margin-top: 16px;
+}
+.pass{
+    text-align: left;
+    margin: 10px 0;
+}
+.pass a{
+    color:white;
+    text-decoration: none;
+}
+.pass:hover a{
+ text-decoration: underline;
+ color:pink;
+}
+input[type="submit"]{
+ background: pink;/*box*/
+ box-shadow: 0 0 10px blueviolet;
+ color:white;/*text color*/
+ font-size: 18px;
+ letter-spacing: 1px;
+ font-weight: 600;
+ cursor:pointer
+}
+input[type="submit"]:hover{
+    background: #2691d9;
+}
+.login{
+    color:grey;
+    margin: 20px 0;
+}
+.link{
+    display: flex;
+    cursor:pointer;
+    color:white;
+    margin:0 0 20px 0;
+}
+.google{
+    width: 100%;
+    height: 42px;
+    color:beige;
+    line-height: 45px;
+    margin-left: 0px;
+    margin-top: 10px;
+    background: #3cba54;
+}
+.google:hover{
+    background: #a6c9ac;
+}
+.link span{
+ font-size: 16px;
+ margin-left: 8px;
+ letter-spacing: 1px;
+ font-weight: 500;
+}
